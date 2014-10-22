@@ -12,7 +12,7 @@
   <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,300,700,300italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="f/fancybox/jquery.fancybox.css?v=2.1.5" media="screen">
   <link rel="shortcut icon" href="favicon.ico">
   <script src="f/js/jquery-1.10.2.min.js"></script>
@@ -22,655 +22,677 @@
   <script src="f/js/jquery.transit.min.js"></script>
   <script src="f/js/common.js"></script>
   <!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
-  
+
   <script>
-	function Switch(n)
-	{
-		switch (n)
-		{
-			case 1:
-			{
-				$('#otrasl-switch').addClass('active');
-				$('#product-switch').removeClass('active');
-				
-				
-				$('#otrasl-links').addClass('active');
-				$('#product-links').removeClass('active');
-				break;
-			}
-			case 2:
-			{
-				$('#product-switch').addClass('active');
-				$('#otrasl-switch').removeClass('active');
-				
-				$('#product-links').addClass('active');
-				$('#otrasl-links').removeClass('active');
-				break;
-			}
-			
-			case 3:
-			{
-				$('#top1-switch').addClass('active');
-				$('#top2-switch-button').removeClass('active');
-				$('#top3-switch-button').removeClass('active');
-				
-				$('#top1-switch-button').addClass('active');
-				$('#top2-switch').removeClass('active');
-				$('#top3-switch').removeClass('active');
-				break;
-			}
-			case 4:
-			{
-				$('#top2-switch').addClass('active');
-				$('#top1-switch-button').removeClass('active');
-				$('#top3-switch-button').removeClass('active');
-				
-				$('#top2-switch-button').addClass('active');
-				$('#top1-switch').removeClass('active');
-				$('#top3-switch').removeClass('active');
-				break;
-			}
-			case 5:
-			{
-				$('#top3-switch').addClass('active');
-				$('#top1-switch-button').removeClass('active');
-				$('#top2-switch-button').removeClass('active');
-				
-				$('#top3-switch-button').addClass('active');
-				$('#top1-switch').removeClass('active');
-				$('#top2-switch').removeClass('active');
-				break;
-			}
-			case 6:
-			{
-				$('#foto-switch-button').addClass('active');
-				$('#scheme-switch-button').removeClass('active');
-				
-				$('#foto-switch').addClass('active');
-				$('#scheme-switch').removeClass('active');
-				break;
-			}
-			case 7:
-			{
-				$('#scheme-switch-button').addClass('active');
-				$('#foto-switch-button').removeClass('active');
-				
-				$('#scheme-switch').addClass('active');
-				$('#foto-switch').removeClass('active');				
-				break;
-			}
-			
-		
-			
-		}
-	}
-	
-	
-  </script>
-  
-  <script>
-$(function() {
-  $('#b-slider__holder0 ul').carouFredSel({
-    width: '100%',
-    items: 1,
-    pagination: ".b-slider__pager",
-    scroll: {
-      items: 1,
-      duration: 500,
-      timeoutDuration: 5000,
-      easing: "quadratic",
-      pauseOnHover: true,
-		fx : "fade",
-    },
-    next: '.b-slider__next0',
-    onCreate: function( data ) {
-      data.items.eq(0).addClass('current').find('.b-slider__mask0').css('opacity',0);
-      
+  function Switch(n) {
+    switch (n) {
+      case 1:
+        {
+          $('#otrasl-switch').addClass('active');
+          $('#product-switch').removeClass('active');
+
+
+          $('#otrasl-links').addClass('active');
+          $('#product-links').removeClass('active');
+          break;
+        }
+      case 2:
+        {
+          $('#product-switch').addClass('active');
+          $('#otrasl-switch').removeClass('active');
+
+          $('#product-links').addClass('active');
+          $('#otrasl-links').removeClass('active');
+          break;
+        }
+
+      case 3:
+        {
+          $('#top1-switch').addClass('active');
+          $('#top2-switch-button').removeClass('active');
+          $('#top3-switch-button').removeClass('active');
+
+          $('#top1-switch-button').addClass('active');
+          $('#top2-switch').removeClass('active');
+          $('#top3-switch').removeClass('active');
+          break;
+        }
+      case 4:
+        {
+          $('#top2-switch').addClass('active');
+          $('#top1-switch-button').removeClass('active');
+          $('#top3-switch-button').removeClass('active');
+
+          $('#top2-switch-button').addClass('active');
+          $('#top1-switch').removeClass('active');
+          $('#top3-switch').removeClass('active');
+          break;
+        }
+      case 5:
+        {
+          $('#top3-switch').addClass('active');
+          $('#top1-switch-button').removeClass('active');
+          $('#top2-switch-button').removeClass('active');
+
+          $('#top3-switch-button').addClass('active');
+          $('#top1-switch').removeClass('active');
+          $('#top2-switch').removeClass('active');
+          break;
+        }
+      case 6:
+        {
+          $('#foto-switch-button').addClass('active');
+          $('#scheme-switch-button').removeClass('active');
+
+          $('#foto-switch').addClass('active');
+          $('#scheme-switch').removeClass('active');
+          break;
+        }
+      case 7:
+        {
+          $('#scheme-switch-button').addClass('active');
+          $('#foto-switch-button').removeClass('active');
+
+          $('#scheme-switch').addClass('active');
+          $('#foto-switch').removeClass('active');
+          break;
+        }
+
+
+
     }
+  }
+  </script>
 
-  });
-  $('#b-slider__holder0 ul').children().click(function(event) {
-  	event.stopPropagation();
-    $('#b-slider__holder0 ul').trigger( 'slideTo', [this] );
-  });
- 
-});
-</script>
-
-<script>
-$(function() {
-  $('#b-slider__holder1 ul').carouFredSel({
-    width: '100%',
-    items: 2,
-	pagination: ".b-slider__pager1",
-    scroll: {
+  <script>
+  $(function() {
+    $('#b-slider__holder0 ul').carouFredSel({
+      width: '100%',
       items: 1,
-      duration: 500,
-      timeoutDuration: 5000,
-      easing: "quadratic",
-      pauseOnHover: true,
-		onBefore: function( data ) {
-        $('#b-slider__holder1 li').removeClass('current');
-        data.items.old.eq(0).find('.b-slider__mask1').stop().animate({
-          'opacity': 0.7
-        }, data.scroll.duration);
-        data.items.visible.eq(0).addClass('current').find('.b-slider__mask1').stop().animate({
-          'opacity': 0
-        }, data.scroll.duration);
+      pagination: ".b-slider__pager",
+      scroll: {
+        items: 1,
+        duration: 500,
+        timeoutDuration: 5000,
+        easing: "quadratic",
+        pauseOnHover: true,
+        fx: "fade",
+      },
+      next: '.b-slider__next0',
+      onCreate: function(data) {
+        data.items.eq(0).addClass('current').find('.b-slider__mask0').css('opacity', 0);
 
       }
-    },
-	 
-    next: '.b-slider__next1',
-	prev: '.b-slider__prev1',
-	onCreate: function( data ) {
-      
-	   data.items.eq(0).addClass('current').next().find('.b-slider__mask1').css('opacity',0.7);
-	   data.items.eq(0).addClass('current').next().next().find('.b-slider__mask1').css('opacity',0.7);
+
+    });
+    $('#b-slider__holder0 ul').children().click(function(event) {
+      event.stopPropagation();
+      $('#b-slider__holder0 ul').trigger('slideTo', [this]);
+    });
+
+  });
+  </script>
+
+  <script>
+  $(function() {
+    $('#b-slider__holder1 ul').carouFredSel({
+      width: '100%',
+      items: 2,
+      pagination: ".b-slider__pager1",
+      scroll: {
+        items: 1,
+        duration: 500,
+        timeoutDuration: 5000,
+        easing: "quadratic",
+        pauseOnHover: true,
+        onBefore: function(data) {
+          $('#b-slider__holder1 li').removeClass('current');
+          data.items.old.eq(0).find('.b-slider__mask1').stop().animate({
+            'opacity': 0.7
+          }, data.scroll.duration);
+          data.items.visible.eq(0).addClass('current').find('.b-slider__mask1').stop().animate({
+            'opacity': 0
+          }, data.scroll.duration);
+
+        }
+      },
+
+      next: '.b-slider__next1',
+      prev: '.b-slider__prev1',
+      onCreate: function(data) {
+
+        data.items.eq(0).addClass('current').next().find('.b-slider__mask1').css('opacity', 0.7);
+        data.items.eq(0).addClass('current').next().next().find('.b-slider__mask1').css('opacity', 0.7);
+      }
+
+    });
+    $('#b-slider__holder1 ul').children().click(function(event) {
+      event.stopPropagation();
+      $('#b-slider__holder1 ul').trigger('slideTo', [this]);
+    });
+
+  });
+  </script>
+
+  <script>
+  $(function() {
+    $('#b-slider__holder2 ul').carouFredSel({
+      width: '100%',
+      items: 6,
+      pagination: ".b-slider__pager2",
+
+      scroll: {
+        items: 1,
+        duration: 500,
+        timeoutDuration: 5000,
+        easing: "quadratic",
+        pauseOnHover: true,
+
+      },
+      next: '.b-slider__next2',
+      prev: '.b-slider__prev2',
+      onCreate: function(data) {
+        data.items.eq(0).addClass('current').find('.b-slider__mask0').css('opacity', 0);
+        $('#b-slider__holder2 ul').trigger('slideTo', [this]);
+        if ($(window).width() < 1600) {
+          $('#b-slider__holder2 ul').trigger('configuration', ['items', {
+            visible: 5
+          }], true);
+        }
+
+        if ($(window).width() < 1420) {
+          $('#b-slider__holder2 ul').trigger('configuration', ['items', {
+            visible: 4
+          }], true);
+        }
+
+        if ($(window).width() < 1245) {
+          $('#b-slider__holder2 ul').trigger('configuration', ['items', {
+            visible: 3
+          }], true);
+        }
+      }
+    });
+
+
+    $('#b-slider__holder2 ul').children().click(function(event) {
+      event.stopPropagation();
+      $('#b-slider__holder2 ul').trigger('slideTo', [this]);
+    });
+
+  });
+  </script>
+
+  <script>
+  function imageCarousel() {
+
+    var carousel = $('#b-slider__holder2 ul');
+
+    var width = $(window).width();
+    if (width < 1000) {
+      carousel.trigger('destroy');
+    } else {
+
+      var items = 6;
+
+      var width = $(window).width();
+      if (width < 1600) {
+        items = 5;
+      }
+      if ($(window).width() < 1420) {
+        items = 4;
+      }
+
+      if ($(window).width() < 1245) {
+        items = 3;
+      }
+
+
+      carousel.carouFredSel({
+        width: '100%',
+        items: items,
+        pagination: ".b-slider__pager2",
+
+        scroll: {
+          items: 1,
+          duration: 500,
+          timeoutDuration: 5000,
+          easing: "quadratic",
+          pauseOnHover: true,
+
+        },
+        next: '.b-slider__next2',
+        prev: '.b-slider__prev2',
+        onCreate: function() {
+          carousel.parent().add(carousel).css('height', carousel.children().first().height() + 30 + 'px');
+        }
+
+      });
+
     }
+  };
 
-  });
-  $('#b-slider__holder1 ul').children().click(function(event) {
-  	event.stopPropagation();
-    $('#b-slider__holder1 ul').trigger( 'slideTo', [this] );
-  });
- 
-});
-</script>
+  var resizeTimer;
 
-<script>
-$(function() {
-  $('#b-slider__holder2 ul').carouFredSel({
-    width: '100%',
-    items: 6,
-	pagination: ".b-slider__pager2",
-	
-    scroll: {
-      items: 1,
-      duration: 500,
-      timeoutDuration: 5000,
-      easing: "quadratic",
-      pauseOnHover: true,
-		
-    },
-    next: '.b-slider__next2',
-	prev: '.b-slider__prev2',
-	onCreate: function( data ) {
-      data.items.eq(0).addClass('current').find('.b-slider__mask0').css('opacity',0);
-	  $('#b-slider__holder2 ul').trigger( 'slideTo', [this] );
-		if($(window).width() < 1600)
-		{
-			$('#b-slider__holder2 ul').trigger('configuration', ['items', {visible : 5}], true); 
-		}
-		
-		if($(window).width() < 1420)
-		{
-			$('#b-slider__holder2 ul').trigger('configuration', ['items', {visible : 4}], true); 
-		}
-		
-		if($(window).width() < 1245)
-		{
-			$('#b-slider__holder2 ul').trigger('configuration', ['items', {visible : 3}], true); 
-		}
-    }
-  });
- 
-  
-  $('#b-slider__holder2 ul').children().click(function(event) {
-  	event.stopPropagation();
-    $('#b-slider__holder2 ul').trigger( 'slideTo', [this] );
-  });
-   
-});
-</script>
-
-<script>
-function imageCarousel() {
-
-	var carousel =  $('#b-slider__holder2 ul');
-
-	var width = $(window).width();
-	if(width < 1000) {
-		 carousel.trigger('destroy');
-	}
-	
-	else {
-	
-	var items = 6;
-
-	var width = $(window).width();
-	if(width < 1600)
-	{
-		items = 5; 
-	}
-	if($(window).width() < 1420)
-	{
-		items = 4;
-	}
-		
-	if($(window).width() < 1245)
-	{
-		items = 3;
-	}
-	
-
-	carousel.carouFredSel({
-	width: '100%',
-    items: items,
-	pagination: ".b-slider__pager2",
-	
-    scroll: {
-      items: 1,
-      duration: 500,
-      timeoutDuration: 5000,
-      easing: "quadratic",
-      pauseOnHover: true,
-		
-    },
-    next: '.b-slider__next2',
-	prev: '.b-slider__prev2',
-    onCreate : function () {
-        carousel.parent().add(carousel).css('height', carousel.children().first().height() + 30 + 'px');
-    }
-
-});
-
-}
-};
-
-var resizeTimer;
-
-$(window).resize(function() {
+  $(window).resize(function() {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(imageCarousel, 10);
-}).resize();
-</script>
+  }).resize();
+  </script>
 </head>
 
 <body>
-  <div class="b-header">
-    <div class="b-container">
-      <div class="b-header__wrap">
-        <div class="b-header__logo">
-          <a href="/">
-            <img src="f/i/logo.jpg" alt="">
-          </a>
+  <div class="b-wrap">
+    <header class="b-header">
+	    <div class="b-header__row">
+	      <div class="b-header__logo">
+	        <a href="/">
+	          <img src="f/i/logo.jpg" alt="">
+	        </a>
+	      </div>
+	      <div class="b-header__menu">
+	        <ul>
+	          <li><a href="#">О компании</a>
+	          </li>
+	          <li><a href="#">Виды деятельности</a>
+	          </li>
+	          <li><a href="#">АСУ ТП</a>
+	          </li>
+	          <li><a href="#">Производство</a>
+	          </li>
+	          <li><a href="#">Отрасли</a>
+	          </li>
+	          <li><a href="#">Реализованные проекты</a>
+	          </li>
+	          <li><a href="#">Контакты</a>
+	          </li>
+	        </ul>
+	      </div>
+	      <div class="b-header__contacts">
+	        <div class="b-header__phone">
+	          <a href="#callback" class="modal-inline" title="Обратный звонок">
+	            <span class="b-header__phonecode">+ 7 (4852)</span>47-77-30</a>
+	        </div>
+	         <a href="#order" class="modal-inline yellow-btn"><span class="iconize-note"></span>Отправить заявку</a>
+	      </div>
+	    </div>
+    </header>
+    <div class="b-slider0">
+      <div class="b-slider__wrap0">
+        <div id="b-slider__holder0">
+          <ul>
+            <li data-title="1">
+              <img src="f/i/slides/slide1-1.jpg" alt="">
+            </li>
+            <li data-title="2">
+              <img src="f/i/slides/slide1-2.jpg" alt="">
+            </li>
+            <li data-title="3">
+              <img src="f/i/slides/slide1-3.jpg" alt="">
+            </li>
+          </ul>
         </div>
-        <div class="b-header__content">
-         
-          <div class="b-header__contacts">
-            <div class="b-header__phone">
-              <a href="#callback" class="modal-inline iconize-phone" title="Обратный звонок">
-                <span class="b-header__phonecode">+ 7 (4852) </span>47-77-30</a>
-            </div>
-			
-           <div class = "header button">
-				<a href = "#order" class = "modal-inline">
-					<img src="f/i/note.png" alt="">
-					<span>Отправить заявку</span>
-				</a>
-			</div>
+        <div class="b-slider__pager"></div>
+      </div>
+      <div class="b-slider0-left">
+        <span class="b-slider0-left-title">Автоматизация технологических процессов</span>
+        <div style="clear: both"></div>
+        <a href="#" class="b-slider0-left-switch" id="otrasl-switch" OnClick="Switch(1);">По отраслям</a>
+        <a href="#" class="b-slider0-left-switch active" id="product-switch" OnClick="Switch(2);">По типу продукции</a>
+        <div class="b-slider0-left-links" id="otrasl-links">
+          <div>
+            <a href="#">Автоматических линий</a>
+            </br>
+            <a href="#">Станков</a>
+            </br>
+            <a href="#">Котельных</a>
+            </br>
+            <a href="#">Сборочных конвееров</a>
+            </br>
+            <a href="#">Технологических установок</a>
+            </br>
+            <a href="#">Вентиляции и кондиционирования</a>
+            </br>
           </div>
-          <div class="b-header__menu">
-            <ul>
-              <li><a href="#">О компании</a>
-              </li>
-              <li><a href="#">Виды деятельности</a>
-              </li>
-              <li><a href="#">АСУ ТП</a>
-              </li>
-              <li><a href="#">Производство</a>
-              </li>
-              <li><a href="#">Отрасли</a>
-              </li>
-              <li><a href="#">Реализованные проекты</a>
-              </li>
-              <li><a href="#">Контакты</a>
-              </li>
-            </ul>
-
+          <div>
+            <a href="#">Вибромониторинг</a>
+            </br>
+            <a href="#">Газоанализация воздушной среды</a>
+            </br>
+            <a href="#">Системы мониторинга сооружений</a>
+            </br>
+            <a href="#">Протекторная защита</a>
+            </br>
+            <a href="#">Систем заземлений</a>
+          </div>
+        </div>
+        <div class="b-slider0-left-links  active" id="product-links">
+          <div>
+            <a href="#">Системы мониторинга сооружений</a>
+            </br>
+            <a href="#">Котельных</a>
+            </br>
+            <a href="#">Сборочных конвееров</a>
+            </br>
+            <a href="#">Технологических установок</a>
+            </br>
+            <a href="#">Протекторная защита</a>
+            </br>
+            <a href="#">Систем заземлений</a>
+            </br>
+          </div>
+          <div>
+            <a href="#">Автоматических линий</a>
+            </br>
+            <a href="#">Станков</a>
+            </br>
+            <a href="#">Вентиляции и кондиционирования</a>
+            </br>
+            <a href="#">Вибромониторинг</a>
+            </br>
+            <a href="#">Газоанализация воздушной среды</a>
+            </br>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="b-slider0">
-    <div class="b-slider__wrap0">
-      <div id="b-slider__holder0">
+    <div class="facts">
+      <ul>
+        <li>
+          <img src="f/i/facts/fact1.png" alt="">
+        </li>
+        <li>
+          <img src="f/i/facts/fact2.png" alt="">
+        </li>
+        <li>
+          <img src="f/i/facts/fact3.png" alt="">
+        </li>
+        <li>
+          <img src="f/i/facts/fact4.png" alt="">
+        </li>
+      </ul>
+    </div>
+    <div class="activity">
+      <span class="activity-title">Наша</br>деятельность</span>
+      <p>Автоматизация предполагает установку комплекса оборудования, обеспечивающего полностью автономное функционирование компонентов системы без участия оператора. Таким образом, от сотрудников не требуется обеспечение постоянного контроля производственного процесса. Автоматизация позволяет увеличить надёжность системы.</p>
+      <div class="button">
+        <a href="#order" class="modal-inline">
+          <img src="f/i/note2.png" alt="">
+          <span>Отправить заявку</span>
+        </a>
+      </div>
+      <img class="activity-icons" src="f/i/activity-icons.png" alt="">
+      <span class="stages">Экспертиза и аудит</span>
+      <span class="stages">Проектирование</span>
+      <span class="stages">Комплексные поставки систем управления</span>
+      <span class="stages">Строительно монтажные работы</span>
+      <span class="stages">Гарантийное и постгарантийное обслуживание</span>
+      <span class="stages">Пусконаладочные работы</span>
+      <span class="stages">Монтаж</span>
+    </div>
+    <div class="top" id="top" name="top">
+      <span class="top-title">топ-3 реализованных проектов</span>
+      <a href="#top" class="top-switch-button active" id="top1-switch-button" OnClick="Switch(3);">1</a>
+      <a href="#top" class="top-switch-button" id="top2-switch-button" OnClick="Switch(4);">2</a>
+      <a href="#top" class="top-switch-button" id="top3-switch-button" OnClick="Switch(5);">3</a>
+      <div style="clear: both"></div>
+      <div id="top1-switch" class="top-switch active">
+        <span>«1Установка гидроочистки дизельного топлива с объектами ОЗХ»</span>
+        <p>Гидроочистка дизельного топлива направлена на снижение содержания серы и полиароматических углеводоров. Сернистые соединения сгорая образуют сернистый газ, который с водой образует сернистую кислоту — основной источник кислотных дождей.</p>
+      </div>
+      <div id="top2-switch" class="top-switch">
+        <span>«2Установка гидроочистки дизельного топлива с объектами ОЗХ»</span>
+        <p>Гидроочистка дизельного топлива направлена на снижение содержания серы и полиароматических углеводоров. Сернистые соединения сгорая образуют сернистый газ, который с водой образует сернистую кислоту — основной источник кислотных дождей.</p>
+      </div>
+      <div id="top3-switch" class="top-switch">
+        <span>«3Установка гидроочистки дизельного топлива с объектами ОЗХ»</span>
+        <p>Гидроочистка дизельного топлива направлена на снижение содержания серы и полиароматических углеводоров. Сернистые соединения сгорая образуют сернистый газ, который с водой образует сернистую кислоту — основной источник кислотных дождей.</p>
+      </div>
+      <div class="top-button button">
+        <a href="#order" class="modal-inline">
+          <span>Отправить заявку</span>
+          <span></span>
+        </a>
+      </div>
+      <div id="foto-switch" class="active">
+        <div class="b-slider1">
+          <div class="b-slider__wrap1">
+            <div id="b-slider__holder1">
+              <ul>
+                <li data-title="1">
+                  <img src="f/i/slides/slide2-1.jpg" alt="">
+                  <span class="b-slider__mask1"></span>
+                </li>
+                <li data-title="2">
+                  <img src="f/i/slides/slide2-1.jpg" alt="">
+                  <span class="b-slider__mask1"></span>
+                </li>
+                <li data-title="3">
+                  <img src="f/i/slides/slide2-1.jpg" alt="">
+                  <span class="b-slider__mask1"></span>
+                </li>
+              </ul>
+            </div>
+            <div class="b-slider__next1"></div>
+            <div class="b-slider__prev1"></div>
+          </div>
+        </div>
+      </div>
+      <div id="scheme-switch">
+        <img src="f/i/scheme.png" alt="">
+      </div>
+      <a href="#top" class="top-switch-button2 active" id="foto-switch-button" OnClick="Switch(6);">
+        <span></span>Фото проекта</a>
+      <a href="#top" class="top-switch-button2 " id="scheme-switch-button" OnClick="Switch(7);">
+        <span></span>Структурная схема</a>
+    </div>
+    <div class="equipment">
+      <span>Мы работаем</br>с оборудованием</span>
+      <div class="b-slider2">
+        <div class="b-slider__wrap2">
+          <div id="b-slider__holder2">
+            <ul>
+              <li data-title="1">
+                <a href="#">
+                  <img src="f/i/slides/partner1.png" alt="">
+                </a>
+              </li>
+              <li data-title="2">
+                <a href="#">
+                  <img src="f/i/slides/partner2.png" alt="">
+                </a>
+              </li>
+              <li data-title="3">
+                <a href="#">
+                  <img src="f/i/slides/partner3.png" alt="">
+                </a>
+              </li>
+              <li data-title="4">
+                <a href="#">
+                  <img src="f/i/slides/partner4.png" alt="">
+                </a>
+              </li>
+              <li data-title="5">
+                <a href="#">
+                  <img src="f/i/slides/partner2.png" alt="">
+                </a>
+              </li>
+              <li data-title="7">
+                <a href="#">
+                  <img src="f/i/slides/partner1.png" alt="">
+                </a>
+              </li>
+              <li data-title="8">
+                <a href="#">
+                  <img src="f/i/slides/partner2.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="b-slider__next2"></div>
+        <div class="b-slider__prev2"></div>
+      </div>
+    </div>
+    <div class="news">
+      <span class="news-title">Новости</span>
+      <span class="news-date">—12.03</span>
+      <a href="#" class="news-content">Одержана еще одна трудовая победа. Окончены работы по монтажу средств автоматизации на установках Аммиак-4 и КарОкончены работы по монтажу средств автоматизации на установках Аммиак-4 и Кар</a>
+      <img src="f/i/news-shadow.png" alt="">
+    </div>
+    <div class="b-footer">
+      <div class="b-footer__menu">
         <ul>
-          <li data-title="1">
-              <img src="f/i/slides/slide1-1.jpg" alt="">
-            
+          <li><a href="#">О компании</a>
           </li>
-          <li data-title="2">
-              <img src="f/i/slides/slide1-2.jpg" alt="">
+          <li><a href="#">Виды деятельности</a>
           </li>
-          <li data-title="3">
-              <img src="f/i/slides/slide1-3.jpg" alt="">
+          <li><a href="#">АСУ ТП</a>
+          </li>
+          <li><a href="#">Производство</a>
+          </li>
+          <li><a href="#">Отрасли</a>
+          </li>
+          <li><a href="#">Реализованные проекты</a>
+          </li>
+          <li><a href="#">Контакты</a>
           </li>
         </ul>
       </div>
-   
-      <div class="b-slider__pager"></div>
-     
-    </div>
-	<div class = "b-slider0-left">
-		<span class = "b-slider0-left-title">Автоматизация технологических процессов</span>
-		<div style = "clear: both"></div>
-		<a href = "#" class = "b-slider0-left-switch" id = "otrasl-switch" OnClick = "Switch(1);">По отраслям</a>
-		<a href = "#" class = "b-slider0-left-switch active" id = "product-switch" OnClick = "Switch(2);">По типу продукции</a>
-		<div class = "b-slider0-left-links" id = "otrasl-links">
-			<div>
-			<a href = "#">Автоматических линий</a></br>
-			<a href = "#">Станков</a></br>
-			<a href = "#">Котельных</a></br>
-			<a href = "#">Сборочных конвееров</a></br>
-			<a href = "#">Технологических установок</a></br>
-			<a href = "#">Вентиляции и кондиционирования</a></br>
-			</div>
-			<div>
-			<a href = "#">Вибромониторинг</a></br>
-			<a href = "#">Газоанализация воздушной среды</a></br>
-			<a href = "#">Системы мониторинга сооружений</a></br>
-			<a href = "#">Протекторная защита</a></br>
-			<a href = "#">Систем заземлений</a>
-			</div>
-		</div>
-		<div class = "b-slider0-left-links  active" id = "product-links">
-			<div>
-			<a href = "#">Системы мониторинга сооружений</a></br>
-			<a href = "#">Котельных</a></br>
-			<a href = "#">Сборочных конвееров</a></br>
-			<a href = "#">Технологических установок</a></br>
-			<a href = "#">Протекторная защита</a></br>
-			<a href = "#">Систем заземлений</a></br>
-			</div>
-			<div>
-			<a href = "#">Автоматических линий</a></br>
-			<a href = "#">Станков</a></br>
-			<a href = "#">Вентиляции и кондиционирования</a></br>
-			<a href = "#">Вибромониторинг</a></br>
-			<a href = "#">Газоанализация воздушной среды</a></br>
-			</div>
-			
-		</div>
-	</div>
-	
-  </div>
-
-	<div class = "facts">
-		<ul>
-			<li><img src="f/i/facts/fact1.png" alt=""></li>
-			<li><img src="f/i/facts/fact2.png" alt=""></li>
-			<li><img src="f/i/facts/fact3.png" alt=""></li>
-			<li><img src="f/i/facts/fact4.png" alt=""></li>
-		</ul>
-	</div>
-	
-	<div class = "activity">
-		<span class = "activity-title">Наша </br>деятельность</span>
-		<p>Автоматизация предполагает установку комплекса оборудования, обеспечивающего полностью автономное функционирование компонентов системы без участия оператора. Таким образом, от сотрудников не требуется обеспечение постоянного контроля производственного процесса. Автоматизация позволяет увеличить надёжность системы.</p>
-		<div class = "button">
-			<a href = "#order" class = "modal-inline">
-				<img src="f/i/note2.png" alt="">
-				<span>Отправить заявку</span>
-			</a>
-		</div>
-		<img class = "activity-icons" src="f/i/activity-icons.png" alt="">
-		<span class = "stages">Экспертиза и аудит</span>
-		<span class = "stages">Проектирование</span>
-		<span class = "stages">Комплексные поставки систем управления</span>
-		<span class = "stages">Строительно монтажные работы</span>
-		<span class = "stages">Гарантийное и постгарантийное обслуживание</span>
-		<span class = "stages">Пусконаладочные работы</span>
-		<span class = "stages">Монтаж</span>
-	</div>
-	
-	<div class = "top" id = "top" name = "top">
-		<span class = "top-title">топ-3 реализованных проектов</span>
-		
-		<a href = "#top" class = "top-switch-button active"  id = "top1-switch-button" OnClick = "Switch(3);">1</a>
-		<a href = "#top" class = "top-switch-button" id = "top2-switch-button" OnClick = "Switch(4);">2</a>
-		<a href = "#top" class = "top-switch-button" id = "top3-switch-button" OnClick = "Switch(5);">3</a>
-		<div style = "clear: both"></div>
-		<div id = "top1-switch" class = "top-switch active">
-			<span>«1Установка гидроочистки дизельного топлива с объектами ОЗХ»</span>
-			<p>Гидроочистка дизельного топлива направлена на снижение содержания серы и полиароматических углеводоров. Сернистые соединения сгорая образуют сернистый газ, который с водой образует сернистую кислоту — основной источник кислотных дождей.</p>
-		</div>
-		
-		<div id = "top2-switch" class = "top-switch">
-			<span>«2Установка гидроочистки дизельного топлива с объектами ОЗХ»</span>
-			<p>Гидроочистка дизельного топлива направлена на снижение содержания серы и полиароматических углеводоров. Сернистые соединения сгорая образуют сернистый газ, который с водой образует сернистую кислоту — основной источник кислотных дождей.</p>
-		</div>
-		
-		<div id = "top3-switch" class = "top-switch">
-			<span>«3Установка гидроочистки дизельного топлива с объектами ОЗХ»</span>
-			<p>Гидроочистка дизельного топлива направлена на снижение содержания серы и полиароматических углеводоров. Сернистые соединения сгорая образуют сернистый газ, который с водой образует сернистую кислоту — основной источник кислотных дождей.</p>
-		</div>
-		
-		<div class = "top-button button">
-				<a href = "#order" class = "modal-inline">
-					<span>Отправить заявку</span>
-					<span></span>
-				</a>
-		</div>
-	
-		<div id = "foto-switch" class = "active" >
-			<div class="b-slider1">
-				<div class="b-slider__wrap1">
-				  <div id="b-slider__holder1">
-					<ul>
-					  <li data-title="1">
-						 <img src="f/i/slides/slide2-1.jpg" alt="">
-						 <span class="b-slider__mask1"></span>
-					  </li>
-					  <li data-title="2">
-						  <img src="f/i/slides/slide2-1.jpg" alt="">
-						  <span class="b-slider__mask1"></span>
-					  </li>
-					  <li data-title="3">
-						  <img src="f/i/slides/slide2-1.jpg" alt="">
-						  <span class="b-slider__mask1"></span>
-					  </li>
-					</ul>
-				  </div>	
-				 <div class="b-slider__next1"></div>
-				  <div class="b-slider__prev1"></div>
-				</div>
-			</div>
-		</div>
-		<div id = "scheme-switch">
-			<img src="f/i/scheme.png" alt="">
-		</div>
-		<a href = "#top" class = "top-switch-button2 active" id = "foto-switch-button" OnClick = "Switch(6);"><span></span>Фото проекта</a>
-		<a href = "#top" class = "top-switch-button2 " id = "scheme-switch-button" OnClick = "Switch(7);"><span></span>Структурная схема</a>
-		
-	</div>
-	
-	<div class = "equipment">
-		<span>Мы работаем</br> с оборудованием</span>
-		<div class="b-slider2">
-			<div class="b-slider__wrap2">
-				<div id="b-slider__holder2">
-					<ul>
-						<li data-title="1">
-							<a href = "#"><img src="f/i/slides/partner1.png" alt=""></a>
-						</li>
-						<li data-title="2">
-							<a href = "#"><img src="f/i/slides/partner2.png" alt=""></a>
-						</li>
-						<li data-title="3">
-							<a href = "#"><img src="f/i/slides/partner3.png" alt=""></a>
-						</li>
-						<li data-title="4">
-							<a href = "#"><img src="f/i/slides/partner4.png" alt=""></a>
-						</li>
-						<li data-title="5">
-							<a href = "#"><img src="f/i/slides/partner2.png" alt=""></a>
-						</li>
-						
-						<li data-title="7">
-							<a href = "#"><img src="f/i/slides/partner1.png" alt=""></a>
-						</li>
-						
-						<li data-title="8" >
-							<a href = "#"><img src="f/i/slides/partner2.png" alt=""></a>
-						</li>
-					</ul>
-				</div>	
-				
-			</div>
-			<div class="b-slider__next2"></div>
-			<div class="b-slider__prev2"></div>
-			
-		</div>
-	</div>
-	
-	<div class = "news">
-		<span class = "news-title">Новости</span>
-		<span class = "news-date">—12.03</span>
-		<a href = "#" class = "news-content">Одержана еще одна трудовая победа. Окончены работы по монтажу средств автоматизации на установках Аммиак-4 и КарОкончены работы по монтажу средств автоматизации на установках Аммиак-4 и Кар</a>
-		<img src="f/i/news-shadow.png" alt="">
-	</div>
-	
-	
-  
-  <div class="b-content">
-    <div class="b-wrap">
-      <div class="clear">
-        
+      <div class="b-developer">Создание сайта — <a href="http://www.inteo-s.ru" rel="external">Inteo</a>
       </div>
-     
-      <div class="b-footer">
-		<div class="b-footer__menu">
-            <ul>
-              <li><a href="#">О компании</a>
-              </li>
-              <li><a href="#">Виды деятельности</a>
-              </li>
-              <li><a href="#">АСУ ТП</a>
-              </li>
-              <li><a href="#">Производство</a>
-              </li>
-              <li><a href="#">Отрасли</a>
-              </li>
-              <li><a href="#">Реализованные проекты</a>
-              </li>
-              <li><a href="#">Контакты</a>
-              </li>
-            </ul>
-
-          </div>
-        <div class="b-developer">Создание сайта — <a href="http://www.inteo-s.ru" rel="external">Inteo</a>
-        </div>
-        &copy;«КИПмонтаж», Ярославль, 2014
-      </div>
+      &copy;«КИПмонтаж», Ярославль, 2014
     </div>
   </div>
-
   <div class="b-extra-forms">
+    <script>
+    $(function() {
+      var callbackform = $("#callbackform");
+      $("#callbackPhone").validate({
+        expression: "if (VAL && VAL!=$('#callbackPhone').attr('placeholder')) return true; else return false;",
+        message: "Укажите ваш телефон"
+      });
+      callbackform.validated(function() {
+        callbackform.find('input[type="submit"]').button('loading');
+        var parentContainer = callbackform.closest('.b-form__holder'),
+          autoHeight = parentContainer.height(),
+          curHeight = parentContainer.height(),
+          actionUrl = callbackform.attr('action');
+        $.post(actionUrl, callbackform.serialize())
+          .done(function(data) {
+            callbackform[0].reset();
+            callbackform.find('input[type="submit"]').removeAttr('disabled').button('reset');
+            callbackform.hide();
+            parentContainer.html(data);
+            parentContainer.height(curHeight);
+            parentContainer.animate({
+              height: autoHeight
+            }, 100, function() {
+              parentContainer.css('height', 'auto');
+              $.fancybox.reposition();
+            });
+          });
+        //metrikaReach('callback');
+      });
 
-<script>
-$(function(){
-	var callbackform = $("#callbackform");
-	$("#callbackPhone").validate({
-		expression: "if (VAL && VAL!=$('#callbackPhone').attr('placeholder')) return true; else return false;",
-		message: "Укажите ваш телефон"
-	});
-	callbackform.validated(function(){
-		callbackform.find('input[type="submit"]').button('loading');
-		var parentContainer = callbackform.closest('.b-form__holder'),
-		autoHeight = parentContainer.height(),
-		curHeight = parentContainer.height(),
-		actionUrl = callbackform.attr('action');	
-		$.post(actionUrl, callbackform.serialize())
-		.done(function(data) {
-			callbackform[0].reset();
-			callbackform.find('input[type="submit"]').removeAttr('disabled').button('reset');
-			callbackform.hide();
-			parentContainer.html(data);
-			parentContainer.height(curHeight);
-			parentContainer.animate({height: autoHeight}, 100, function() {
-			parentContainer.css('height', 'auto');
-			$.fancybox.reposition();
-			});
-		});
-		//metrikaReach('callback');
-	});
+    });
+    </script>
+    <div id="callback" style="width:440px;">
+      <div class="b-form b-form_popup" style="	border-radius: 6px;">
+        <div class="b-form__title">Обратный звонок</div>
+        <div class="b-form__holder">
+          <form action="/send/" name="callbackform" method="post" id="callbackform" style="	border-radius: 6px;">
+            <div class="form-group">
+              <input type="text" name="person" class="form-control btn-block" id="callbackPerson" placeholder="Ваше имя">
+            </div>
+            <div class="form-group">
+              <input type="tel" name="phone" class="form-control btn-block" id="callbackPhone" placeholder="Телефон">
+            </div>
+            <div class="form-group">
+              <textarea name="message" class="form-control btn-block" id="callbackMessage" rows="4" placeholder="Тема, время звонка"></textarea>
+            </div>
 
-});
-</script>
-	<div id="callback" style="width:440px;">
-			<div class="b-form b-form_popup" style = "	border-radius: 6px;">
-				<div class="b-form__title">Обратный звонок</div>
-				<div class="b-form__holder">
-				<form action="/send/" name="callbackform" method="post" id="callbackform" style = "	border-radius: 6px;">
-							<div class="form-group"><input type="text" name="person" class="form-control btn-block" id="callbackPerson" placeholder="Ваше имя"></div>
-							<div class="form-group"><input type="tel" name="phone" class="form-control btn-block" id="callbackPhone" placeholder="Телефон"></div>
-							<div class="form-group"><textarea name="message" class="form-control btn-block" id="callbackMessage" rows="4" placeholder="Тема, время звонка"></textarea></div>
+            <div class="inv">
+              <input type="text" name="country" class="form-control" value="">
+            </div>
+            <div class="b-form__submit">
+              <input type="hidden" name="formtype" value="callback">
+              <input class="btn btn-light" type="submit" name="submit" value="Отправить" data-loading-text="Отправка...">
+            </div>
+            <div style="clear: both;"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+    $(function() {
+      var callbackform = $("#orderform");
+      $("#orderPhone").validate({
+        expression: "if (VAL && VAL!=$('#orderPhone').attr('placeholder')) return true; else return false;",
+        message: "Укажите ваш телефон"
+      });
+      orderform.validated(function() {
+        orderform.find('input[type="submit"]').button('loading');
+        var parentContainer = orderform.closest('.b-form__holder'),
+          autoHeight = parentContainer.height(),
+          curHeight = parentContainer.height(),
+          actionUrl = callbackform.attr('action');
+        $.post(actionUrl, orderform.serialize())
+          .done(function(data) {
+            orderform[0].reset();
+            orderform.find('input[type="submit"]').removeAttr('disabled').button('reset');
+            orderform.hide();
+            parentContainer.html(data);
+            parentContainer.height(curHeight);
+            parentContainer.animate({
+              height: autoHeight
+            }, 100, function() {
+              parentContainer.css('height', 'auto');
+              $.fancybox.reposition();
+            });
+          });
+        //metrikaReach('callback');
+      });
 
-					<div class="inv"><input type="text" name="country" class="form-control" value=""></div>
-					<div class="b-form__submit"><input type="hidden" name="formtype" value="callback"><input class="btn btn-light" type="submit" name="submit" value="Отправить" data-loading-text="Отправка..."></div>
-					<div style = "clear: both;"></div>
-				</form>
-				</div>
-			</div>
-	</div>
-<script>
-$(function(){
-	var callbackform = $("#orderform");
-	$("#orderPhone").validate({
-		expression: "if (VAL && VAL!=$('#orderPhone').attr('placeholder')) return true; else return false;",
-		message: "Укажите ваш телефон"
-	});
-	orderform.validated(function(){
-		orderform.find('input[type="submit"]').button('loading');
-		var parentContainer = orderform.closest('.b-form__holder'),
-		autoHeight = parentContainer.height(),
-		curHeight = parentContainer.height(),
-		actionUrl = callbackform.attr('action');	
-		$.post(actionUrl, orderform.serialize())
-		.done(function(data) {
-			orderform[0].reset();
-			orderform.find('input[type="submit"]').removeAttr('disabled').button('reset');
-			orderform.hide();
-			parentContainer.html(data);
-			parentContainer.height(curHeight);
-			parentContainer.animate({height: autoHeight}, 100, function() {
-			parentContainer.css('height', 'auto');
-			$.fancybox.reposition();
-			});
-		});
-		//metrikaReach('callback');
-	});
+    });
+    </script>
+    <div id="order" style="width:850px">
+      <div class="b-form b-form_popup">
+        <div class="b-form__title b-form__title_decorated">Отправить заявку</div>
+        <div class="b-form__holder">
+          <form action="/send/" name="orderform" method="post" id="orderform">
 
-});
-</script>
-	<div id="order" style="width:850px">
-			<div class="b-form b-form_popup">
-				<div class="b-form__title b-form__title_decorated">Отправить заявку</div>
-				<div class="b-form__holder">
-				<form action="/send/" name="orderform" method="post" id="orderform">
-					
-							<div class = "b-form__holder-left">
-								<div class="form-group"><input type="text" name="person" class="form-control btn-block" id="orderPerson" placeholder="Ваше имя"></div>
-								<div class="form-group"><input type="tel" name="phone" class="form-control btn-block" id="orderPhone" placeholder="Телефон"></div>
-								<div class="form-group"><input type="email" name="eMail" class="form-control btn-block" id="E-Mail" placeholder="E-Mail"></div>
-							</div>
-							<div class="form-group b-form__holder-right"><textarea name="comment" class="form-control btn-block" id="ordercomment" rows="6" placeholder="Комментарии"></textarea></div>
-					
-					<div class="inv"><input type="text" name="country" class="form-control" value=""></div>
-					<div style = "clear: both"></div>
-					<div class="b-form__submit"><input type="hidden" name="formtype" value="order"><input class="btn btn-light" type="submit" name="submit" value="Отправить" data-loading-text="Отправка..."></div>
-					<span class = "b-form__holder_note">Наши специалисты свяжутся с Вами и помогут найти решение, подходящее именно для вашего производства.</span>
-				</form>
-				</div>
-			</div>
-	</div>
+            <div class="b-form__holder-left">
+              <div class="form-group">
+                <input type="text" name="person" class="form-control btn-block" id="orderPerson" placeholder="Ваше имя">
+              </div>
+              <div class="form-group">
+                <input type="tel" name="phone" class="form-control btn-block" id="orderPhone" placeholder="Телефон">
+              </div>
+              <div class="form-group">
+                <input type="email" name="eMail" class="form-control btn-block" id="E-Mail" placeholder="E-Mail">
+              </div>
+            </div>
+            <div class="form-group b-form__holder-right">
+              <textarea name="comment" class="form-control btn-block" id="ordercomment" rows="6" placeholder="Комментарии"></textarea>
+            </div>
+
+            <div class="inv">
+              <input type="text" name="country" class="form-control" value="">
+            </div>
+            <div style="clear: both"></div>
+            <div class="b-form__submit">
+              <input type="hidden" name="formtype" value="order">
+              <input class="btn btn-light" type="submit" name="submit" value="Отправить" data-loading-text="Отправка...">
+            </div>
+            <span class="b-form__holder_note">Наши специалисты свяжутся с Вами и помогут найти решение, подходящее именно для вашего производства.</span>
+          </form>
+        </div>
+      </div>
+    </div>
 
 
-</div>
+  </div>
 </body>
 
 </html>
