@@ -11,8 +11,8 @@
   <!--[if lte IE 9]><link rel="stylesheet" href="f/css/ie.css"><![endif]-->
   <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,300,700,300italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="f/fancybox/jquery.fancybox.css?v=2.1.5" media="screen">
   <link rel="shortcut icon" href="favicon.ico">
   <script src="f/js/jquery-1.10.2.min.js"></script>
@@ -283,40 +283,41 @@
 
 <body>
   <div class="b-wrap">
-    <header class="b-header">
-	    <div class="b-header__row">
-	      <div class="b-header__logo">
-	        <a href="/">
-	          <img src="f/i/logo.jpg" alt="">
-	        </a>
-	      </div>
-	      <div class="b-header__menu">
-	        <ul>
-	          <li><a href="#">О компании</a>
-	          </li>
-	          <li><a href="#">Виды деятельности</a>
-	          </li>
-	          <li><a href="#">АСУ ТП</a>
-	          </li>
-	          <li><a href="#">Производство</a>
-	          </li>
-	          <li><a href="#">Отрасли</a>
-	          </li>
-	          <li><a href="#">Реализованные проекты</a>
-	          </li>
-	          <li><a href="#">Контакты</a>
-	          </li>
-	        </ul>
-	      </div>
-	      <div class="b-header__contacts">
-	        <div class="b-header__phone">
-	          <a href="#callback" class="modal-inline" title="Обратный звонок">
-	            <span class="b-header__phonecode">+ 7 (4852)</span>47-77-30</a>
-	        </div>
-	         <a href="#order" class="modal-inline yellow-btn"><span class="iconize-note"></span>Отправить заявку</a>
-	      </div>
-	    </div>
-    </header>
+    <div class="b-content">
+	    <header class="b-header">
+		    <div class="b-header__row">
+		      <div class="b-header__logo">
+		        <a href="/">
+		          <img src="f/i/logo.jpg" alt="">
+		        </a>
+		      </div>
+		      <div class="b-header__menu">
+		        <ul>
+		          <li><a href="#">О компании</a>
+		          </li>
+		          <li><a href="#">Виды деятельности</a>
+		          </li>
+		          <li><a href="#">АСУ ТП</a>
+		          </li>
+		          <li><a href="#">Производство</a>
+		          </li>
+		          <li><a href="#">Отрасли</a>
+		          </li>
+		          <li><a href="#">Реализованные проекты</a>
+		          </li>
+		          <li><a href="#">Контакты</a>
+		          </li>
+		        </ul>
+		      </div>
+		      <div class="b-header__contacts">
+		        <div class="b-header__phone">
+		          <span class="b-header__phonecode">+ 7 (4852)</span>47-77-30
+		        </div>
+		         <a href="#order" class="modal-inline yellow-btn"><span class="iconize-note"></span>Отправить заявку</a>
+		      </div>
+		    </div>
+	    </header>
+	  </div>
     <div class="b-slider0">
       <div class="b-slider__wrap0">
         <div id="b-slider__holder0">
@@ -540,29 +541,32 @@
       <a href="#" class="news-content">Одержана еще одна трудовая победа. Окончены работы по монтажу средств автоматизации на установках Аммиак-4 и КарОкончены работы по монтажу средств автоматизации на установках Аммиак-4 и Кар</a>
       <img src="f/i/news-shadow.png" alt="">
     </div>
-    <div class="b-footer">
-      <div class="b-footer__menu">
-        <ul>
-          <li><a href="#">О компании</a>
-          </li>
-          <li><a href="#">Виды деятельности</a>
-          </li>
-          <li><a href="#">АСУ ТП</a>
-          </li>
-          <li><a href="#">Производство</a>
-          </li>
-          <li><a href="#">Отрасли</a>
-          </li>
-          <li><a href="#">Реализованные проекты</a>
-          </li>
-          <li><a href="#">Контакты</a>
-          </li>
-        </ul>
-      </div>
-      <div class="b-developer">Создание сайта — <a href="http://www.inteo-s.ru" rel="external">Inteo</a>
-      </div>
-      &copy;«КИПмонтаж», Ярославль, 2014
-    </div>
+    <div class="b-content">
+	    <footer class="b-footer">
+	    	<div class="b-footer__row">
+		      <div class="b-footer__menu">
+		        <ul>
+		          <li><a href="#">О компании</a>
+		          </li>
+		          <li><a href="#">Виды деятельности</a>
+		          </li>
+		          <li><a href="#">АСУ ТП</a>
+		          </li>
+		          <li><a href="#">Производство</a>
+		          </li>
+		          <li><a href="#">Отрасли</a>
+		          </li>
+		          <li><a href="#">Реализованные проекты</a>
+		          </li>
+		          <li><a href="#">Контакты</a>
+		          </li>
+		        </ul>
+		        <p class="b-copyright">&copy;«КИПмонтаж», Ярославль, 2014</p>
+		      </div>
+		      <div class="b-developer">Создание сайта — <a class="b-developer__link" href="http://www.inteo-s.ru" rel="external">Inteo</a></div>
+		    </div>
+	    </footer>
+	  </div>
   </div>
   <div class="b-extra-forms">
     <script>

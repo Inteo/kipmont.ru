@@ -10,11 +10,9 @@
   <link rel="stylesheet" href="f/css/main.css">
   <!--[if lte IE 9]><link rel="stylesheet" href="f/css/ie.css"><![endif]-->
   <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,300,700,300italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,600,700&subset=all' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="f/fancybox/jquery.fancybox.css?v=2.1.5" media="screen">
-  <link rel="shortcut icon" href="favicon.ico">
   <script src="f/js/jquery-1.10.2.min.js"></script>
   <script src="f/js/jquery.carouFredSel-6.2.1-packed.js"></script>
   <script src="f/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
@@ -22,68 +20,198 @@
   <script src="f/js/jquery.transit.min.js"></script>
   <script src="f/js/common.js"></script>
   <!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script type="text/javascript">
+  function initialize() {
+    var defPos = new google.maps.LatLng(57.562651, 39.823024);
+    var settings = {
+    zoom: 15,
+    center: defPos,
+    mapTypeControl: true,
+    mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+    navigationControl: true,
+    navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("contact-map"), settings);
+    var Mark = new google.maps.MarkerImage("/f/i/icons.png",
+    new google.maps.Size(44,65),
+    new google.maps.Point(0,115),
+    new google.maps.Point(44, 65)
+    );
+    var Pos1 = new google.maps.LatLng(57.562651, 39.823024);
+    var Marker1 = new google.maps.Marker({
+      position: Pos1,
+      map: map,
+      icon: Mark,
+      title:"Pos1"
+    });
+  }
+  </script>
 </head>
 
-<body>
+<body onload="initialize()">
   <div class="b-wrap">
-    <header class="b-header">
-	    <div class="b-header__row">
-	      <div class="b-header__logo">
-	        <a href="/">
-	          <img src="f/i/logo.jpg" alt="">
-	        </a>
-	      </div>
-	      <div class="b-header__menu">
-	        <ul>
-	          <li><a href="#">О компании</a>
-	          </li>
-	          <li><a href="#">Виды деятельности</a>
-	          </li>
-	          <li><a href="#">АСУ ТП</a>
-	          </li>
-	          <li><a href="#">Производство</a>
-	          </li>
-	          <li><a href="#">Отрасли</a>
-	          </li>
-	          <li><a href="#">Реализованные проекты</a>
-	          </li>
-	          <li><a href="#">Контакты</a>
-	          </li>
-	        </ul>
-	      </div>
-	      <div class="b-header__contacts">
-	        <div class="b-header__phone">
-	          <a href="#callback" class="modal-inline" title="Обратный звонок">
-	            <span class="b-header__phonecode">+ 7 (4852)</span>47-77-30</a>
-	        </div>
-	         <a href="#order" class="modal-inline yellow-btn"><span class="iconize-note"></span>Отправить заявку</a>
-	      </div>
-	    </div>
-    </header>
-    <footer class="b-footer">
-    	<div class="b-footer__row">
-	      <div class="b-footer__menu">
-	        <ul>
-	          <li><a href="#">О компании</a>
-	          </li>
-	          <li><a href="#">Виды деятельности</a>
-	          </li>
-	          <li><a href="#">АСУ ТП</a>
-	          </li>
-	          <li><a href="#">Производство</a>
-	          </li>
-	          <li><a href="#">Отрасли</a>
-	          </li>
-	          <li><a href="#">Реализованные проекты</a>
-	          </li>
-	          <li><a href="#">Контакты</a>
-	          </li>
-	        </ul>
-	        <p class="b-copyright">&copy;«КИПмонтаж», Ярославль, 2014</p>
-	      </div>
-	      <div class="b-developer">Создание сайта — <a class="b-developer__link" href="http://www.inteo-s.ru" rel="external">Inteo</a></div>
-	    </div>
-    </footer>
+  	<div class="b-content">
+	    <header class="b-header">
+		    <div class="b-header__row">
+		      <div class="b-header__logo">
+		        <a href="/">
+		          <img src="f/i/logo.jpg" alt="">
+		        </a>
+		      </div>
+		      <div class="b-header__menu">
+		        <ul>
+		          <li><a href="#">О компании</a>
+		          </li>
+		          <li><a href="#">Виды деятельности</a>
+		          </li>
+		          <li><a href="#">АСУ ТП</a>
+		          </li>
+		          <li><a href="#">Производство</a>
+		          </li>
+		          <li><a href="#">Отрасли</a>
+		          </li>
+		          <li><a href="#">Реализованные проекты</a>
+		          </li>
+		          <li><a href="#">Контакты</a>
+		          </li>
+		        </ul>
+		      </div>
+		      <div class="b-header__contacts">
+		        <div class="b-header__phone">
+		          <span class="b-header__phonecode">+ 7 (4852)</span>47-77-30
+		        </div>
+		         <a href="#order" class="modal-inline yellow-btn"><span class="iconize-note"></span>Отправить заявку</a>
+		      </div>
+		    </div>
+	    </header>
+	  </div>
+    <section class="b-contact">
+  		<div class="b-contact__top b-contact__top_main">
+  			<h1 class="b-contact__title">контакты</h1>
+  			<p class="b-contact__subtitle">Главный офис и производственная база</p>
+  			<div class="b-contact__detail">
+  				<div class="b-line">
+  					<div class="b-line__side b-line__side_left">
+  						<span class="b-line__text">Адрес</span>
+  					</div><div class="b-line__side b-line__side_right">
+  						<span class="b-line__text b-line__text_value">г. Ярославль, Московский проспект, д. 122</span>
+  					</div>
+  				</div>
+  				<div class="b-line">
+  					<div class="b-line__side b-line__side_left">
+  						<span class="b-line__text">Тел./факс</span>
+  					</div><div class="b-line__side b-line__side_right">
+  						<span class="b-line__text b-line__text_value">(4852) <span class="b-line__text">47-60-40</span></span>
+  					</div>
+  				</div>
+  				<div class="b-line">
+  					<div class="b-line__side b-line__side_left">
+  						<span class="b-line__text">E-Mail</span>
+  					</div><div class="b-line__side b-line__side_right">
+  						<span class="b-line__text b-line__text_value"><a href="#" class="link">kipmont@mail.ru</a></span>
+  					</div>
+  				</div>
+  				<div class="b-line">
+  					<div class="b-line__side b-line__side_left">
+  						<span class="b-line__text">Режим работы</span>
+  					</div><div class="b-line__side b-line__side_right">
+  						<span class="b-line__text b-line__text_value">Пн-Пт  9:00 — 18:00 <br>Сб, Вс  Выходные</span>
+  					</div>
+  				</div>
+  			</div>
+  			<a href="#" class="yellow-btn"><span class="iconize-quest"></span>Задать вопрос</a>
+  		</div><div id="contact-map" class="b-contact__top b-contact__top_map"></div>
+  		<div class="b-content b-content_depart">
+	    	<div class="b-depart">
+	    		<p class="b-depart__title">руководство</p>
+	    		<div class="b-employ">
+	    			<p class="b-employ__name">Зиров <br> Костантин Владимирович</p>
+	    			<p class="b-employ__func">директор</p>
+	    			<p class="b-employ__phone">(4852) 44-94-35</p>
+	    			<a href="#" class="b-employ__email link">direktor@kipmont.ru</a>
+	    		</div>
+	   	 	</div><div class="b-depart">
+	    		<p class="b-depart__title">Бухгалтерия</p>
+	    		<div class="b-employ">
+	    			<p class="b-employ__name">Замыслова<br>Ксения Сергеевна</p>
+	    			<p class="b-employ__func">главный бухгалтер</p>
+	    			<p class="b-employ__phone">(4852) 47-81-35</p>
+	    			<a href="#" class="b-employ__email link">buhgalteriya@kipmont.ru</a>
+	    		</div><div class="b-employ">
+	    			<p class="b-employ__name">Талабаева<br>Наталья Владимировна</p>
+	    			<p class="b-employ__func">заместитель главного бухгалтера</p>
+	    			<p class="b-employ__phone">(4852) 47-81-35</p>
+	    			<a href="#" class="b-employ__email link">buhgalteriya@kipmont.ru</a>
+	    		</div>
+	    	</div><div class="b-depart">
+	    		<p class="b-depart__title">Служба главного инженера</p>
+	    		<div class="b-employ">
+	    			<p class="b-employ__name"> Скворцов <br>Михаил Владимирович </p>
+	    			<p class="b-employ__func">главный инженер</p>
+	    			<p class="b-employ__phone">(4852) 47-60-40</p>
+	    			<a href="#" class="b-employ__email link">skvorcov@kipmont.ru</a>
+	    		</div><div class="b-employ">
+	    			<p class="b-employ__name">Матвеев <br>Александр Витальевич</p>
+	    			<p class="b-employ__func">заместитель главного инженера</p>
+	    			<p class="b-employ__phone">(4852) 47-81-35</p>
+	    			<a href="#" class="b-employ__email link">matveev@kipmont.ru</a>
+	    		</div>
+	    	</div><div class="b-depart">
+	    		<p class="b-depart__title">Участок подготовки производства (УПП)</p>
+	    		<div class="b-employ">
+	    			<p class="b-employ__name">Скворцов <br>Михаил Владимирович </p>
+	    			<p class="b-employ__func">Начальник УПП</p>
+	    			<p class="b-employ__phone">(4852) 44-52-44</p>
+	    			<a href="#" class="b-employ__email link">upp@kipmont.ru</a>
+	    		</div>
+	    	</div><div class="b-depart">
+	    		<p class="b-depart__title">Отдел материально-технического снабжения (ОМТС)</p>
+	    		<div class="b-employ">
+	    			<p class="b-employ__name">Якимов <br>Евгений Евгеньевич </p>
+	    			<p class="b-employ__func">начальник отдела</p>
+	    			<p class="b-employ__phone">(4852) 47-77-30</p>
+	    			<a href="#" class="b-employ__email link">omts@kipmont.ru</a>
+	    		</div>
+	    	</div><div class="b-depart">
+	    		<p class="b-depart__title">Отдел кадров</p>
+	    		<div class="b-employ">
+	    			<p class="b-employ__name">Иванова <br>Наталья Александровна</p>
+	    			<p class="b-employ__func">начальник отдела</p>
+	    			<p class="b-employ__phone">(4852) 47-60-40</p>
+	    			<a href="#" class="b-employ__email link">otdel_kadrov@kipmont.ru</a>
+	    		</div>
+	    	</div>
+   	 	</div>
+    </section>
+    <div class="b-content">
+	    <footer class="b-footer">
+	    	<div class="b-footer__row">
+		      <div class="b-footer__menu">
+		        <ul>
+		          <li><a href="#">О компании</a>
+		          </li>
+		          <li><a href="#">Виды деятельности</a>
+		          </li>
+		          <li><a href="#">АСУ ТП</a>
+		          </li>
+		          <li><a href="#">Производство</a>
+		          </li>
+		          <li><a href="#">Отрасли</a>
+		          </li>
+		          <li><a href="#">Реализованные проекты</a>
+		          </li>
+		          <li><a href="#">Контакты</a>
+		          </li>
+		        </ul>
+		        <p class="b-copyright">&copy;«КИПмонтаж», Ярославль, 2014</p>
+		      </div>
+		      <div class="b-developer">Создание сайта — <a class="b-developer__link" href="http://www.inteo-s.ru" rel="external">Inteo</a></div>
+		    </div>
+	    </footer>
+	  </div>
   </div>
 
 
@@ -150,12 +278,12 @@
     </div>
     <script>
     $(function() {
-      var callbackform = $("#orderform");
+      var callbackform = $("#callbackform");
       $("#orderPhone").validate({
         expression: "if (VAL && VAL!=$('#orderPhone').attr('placeholder')) return true; else return false;",
         message: "Укажите ваш телефон"
       });
-      orderform.validated(function() {
+      callbackform.validated(function() {
         orderform.find('input[type="submit"]').button('loading');
         var parentContainer = orderform.closest('.b-form__holder'),
           autoHeight = parentContainer.height(),
